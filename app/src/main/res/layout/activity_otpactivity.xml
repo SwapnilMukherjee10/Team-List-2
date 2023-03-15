@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    tools:context=".View.OTPActivity">
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.5">
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="411dp"
+            android:layout_height="359dp"
+            android:layout_margin="10dp"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/otp" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:fontFamily="@font/lilita_one"
+            android:gravity="center"
+            android:text="Enter your OTP below"
+            android:textColor="@color/black"
+            android:textSize="25sp" />
+
+        <EditText
+            android:id="@+id/editTextOTP"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_marginTop="25dp"
+            android:autofillHints="smsOTPCode"
+            android:background="@drawable/box"
+            android:ems="10"
+            android:fontFamily="@font/lilita_one"
+            android:gravity="center"
+            android:importantForAutofill="yes"
+            android:inputType="number"
+            android:maxLength="6"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <Button
+            android:id="@+id/buttonVerify"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_weight="1"
+            android:fontFamily="@font/lilita_one"
+            android:minHeight="0dp"
+            android:text="Verify"
+            android:textSize="30sp" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
